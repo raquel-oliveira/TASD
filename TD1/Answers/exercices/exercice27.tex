@@ -1,0 +1,16 @@
+\subsection*{Exercice 27 [CORRIGÉ 10 FÉVRIER]}
+\textit{Supposons que la probabilité qu’un enfant soit de sexe féminin est 0.4. Quelle est la probabilité d’avoir, parmi 5 enfants, au moins un garcon et au moins une fille ?}\\
+X: le nb de filles \\
+X \til B(5; 0.4)\\
+$\Pro(X = i) = {\left( \begin{array}{cc}5 \\ i\end{array} \right)} \times p^i\times(1-)^{5 - i}$\\
+A = Avoir au moins une fille $\Leftrightarrow$ x $\geq$ 1 \\
+B = Avoir au moin un garçon $\Leftrightarrow$ 5 - x $\geq$ 1 $\Leftrightarrow$ x $\leq$ 4
+\begin{align*}
+    \Pro(A \cap B) &\\
+    \Pro(1 \leq X \leq 4) &= 1 - \Pro(X=0 \text{ou} X =5)\\
+    &= 1 - ({\left( \begin{array}{cc}5 \\ 0\end{array} \right)}0.4^0(1-0.4)^{ 5-0}) + ({\left( \begin{array}{cc}5 \\ 5\end{array} \right)}0.4^5(1-0.4)^{5-5}) )\\
+    &=((1\times1\times0.6^5)+(1\times0.4^5\times1))\\
+    &=1- (0.6^5 + 0.4^5)\\
+    &= 1 - 0.088 \\
+    & = 0.912
+\end{align*}

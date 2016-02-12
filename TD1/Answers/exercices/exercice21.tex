@@ -1,0 +1,43 @@
+\subsection*{Exercice 21 [CORRIGÉ 10 FÉVRIER]}
+\textit{On suppose que l’on a autant de chance d’avoir une fille ou un garçon à la naissance. Votre voisin de palier vous dit qu’il a deux enfants.}\\
+P = 0.5\\
+$\Omega = \{\{F, G\}, \{G, G\}, \{F, F\}, \{G, F\}\}$
+\begin{itemize}
+    \item[(A)]  \textit{Quelle est la probabilité qu’il ait au moins un garçon ?}\\
+    A: au moins un garçon.
+    \begin{equation*}
+        \Pro(A) = \frac{3}{4}
+    \end{equation*}
+    \item[(B)]  \textit{Quelle est la probabilité qu’il ait un garçon, sachant que l’aînée est une fille ?}\\
+    B: l'aînée est un fille
+    \begin{align*}
+        \Pro(B) &= \frac{1}{2} \\
+        \Pro(A \cap B) &= \frac{1}{4}\\
+        \Pro_B(A) &= \frac{\Pro(A \cap B)}{\Pro(B)} \\
+        &= \frac{\frac{1}{4}}{\frac{1}{2}} =\frac{1}{2}
+    \end{align*}
+    \item[(C)]  \textit{Quelle est la probabilité qu’il ait un garçon, sachant qu’il a au moins une fille ?}\\
+    C: Au moins un fille
+    \begin{align*}
+        \Pro(C) &= \frac{3}{4} \\
+        \Pro(A \cap C) &= \frac{1}{2}\\
+        \Pro_C(A) &= \frac{\Pro(A \cap C)}{\Pro(C)} \\
+        &= \frac{\frac{1}{2}}{\frac{3}{4}} = \frac{4}{6} = \frac{2}{3}
+    \end{align*}
+    \item[(D)]  \textit{Vous téléphonez à votre voisin. Une fille décroche le téléphone. Vous savez que dans les familles avec un garçon et une fille, la fille décroche le téléphone avec la probabilité p, quelle est la probabilité que votre voisin ait un garçon ?}\\
+        D: une fille decroché
+    
+    \begin{align*}
+        \Pro_{(F,G)}(D) &= \frac{\Pro(D \cap \{F,G\})}{\Pro(\{F,G\})} \\
+        &= p\\
+        \Pro(D \cap \{F,F\}) &= p \times \frac{1}{4}\\
+        &= \frac{p}{4} \\
+        \Pro(D) &= \Pro(D \cap \Omega)\\
+        &= \Pro((D \cap \{F,F\}) \cup (D \cap \{G,G\}) \cup (D \cap \{F,G\}) \cup (D \cap\{G,F\}))
+    \end{align*}
+    \item[(E)]  \textit{Vous sonnez à la porte de votre voisin. Une fille ou- vre la porte. Sachant que l’aîné(e) ouvre la porte avec probabilité p, et ce indépendamment de la réparti- tion de la famille, quelle est la probabilité que votre voisin ait un garçon ?}\\
+    E: Une fille ouvre la porte
+    \begin{align*}
+        \Pro_E(A) = \frac{\Pro(A \cap E)}{\Pro(E)}
+    \end{align*}
+    \end{itemize}

@@ -1,0 +1,78 @@
+\subsection*{Exercice 17 $[$CORRIGÉ 10 FÉVRIER$]$}
+\textit{Au poker, on utilise un jeu de 52 cartes avec 4 couleurs de cartes (pique, trèfle, carreau, cœur). Une main comprend 5 cartes. Pour les différentes combinaisons, caLculer la probabilité de l’obtenir :
+Une paire, une double paire, un brelan, un full, un carré, une quinte, une couleur, une quinte flush.}\\
+\textbf{Definitions:}\\
+1 paire: exatement 2 cartes de m valeurs\\
+1 double paire: extement dux fois deux cartes de m valeurs avec 2 valeus different.\\
+1 brelan: exatement 3 cartes de m valeurs
+1 full: 3 cartes de une valeur e 2 caeres d'une autre valeur\\
+1 carré:  exatement 4 cartes de m valeurs\\
+1 quinte:5 cartes dant les valeurs se suivent (1-2-3-4-5-...-10-v-d-r-1)\\
+1 couler: 5 cartes de meme coleurs. \\
+1 quinte flush: 5 cartes de meme couler qui formment une suite.\\
+1 quinte flush royale: 10-v-d-r-1 meme colour
+\\
+1 jeu de 52 cartes, 13 valeurs(1...10, V, D, R), 4 couleurs.\\
+Un taie 5 cartes au hasard.\\
+\begin{equation*}
+    | \Omega |  = 
+    {\left( \begin{array}{cc}52 \\ 5\end{array} \right)} =
+    \frac{51!}{5!(52-5)!} = \frac{52 \times 51 \times 50 \times 49 \times 48}{5!} = 10 \text{valeurs de suite possibles}
+\end{equation*}
+Probabilité de obtenir un Color:\\
+\begin{equation*}
+    \Pro(Co) = \frac{{\left( \begin{array}{cc}4 \\ 1\end{array} \right)}{\left( \begin{array}{cc}13 \\ 5\end{array} \right)}}{{\left( \begin{array}{cc}52 \\ 5\end{array} \right)}} = \frac{33}{16660} = 0,19\%
+\end{equation*}
+Probabilité de obtenir un Pair:\\
+\begin{align*}
+    \Pro(P) &= \frac{{\left( \begin{array}{cc}13 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}4 \\ 2\end{array} \right)} \times {\left( \begin{array}{cc}12 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}4 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}11 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}4 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}10 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}4 \\ 1\end{array} \right)}}{{\left( \begin{array}{cc}52 \\ 5\end{array} \right)}}\\
+    &= \frac{13 \times 4 \times 12 \times 4 \times 11 \times 4 \times 10 \times 4}{{\left( \begin{array}{cc}52 \\ 5\end{array} \right)}}\\
+    &=42\%
+\end{align*}
+Probabilité de obtenir un Double Pair:\\
+\begin{align*}
+    \Pro(Dp) &= \frac{{\left( \begin{array}{cc}13 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}4 \\ 2\end{array} \right)} \times {\left( \begin{array}{cc}12 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}4 \\ 2\end{array} \right)} \times {\left( \begin{array}{cc}11 \\ 1\end{array} \right)} \times 4}{{\left( \begin{array}{cc}52 \\ 5\end{array} \right)}}\\
+    &= \frac{13 \times \frac{4!}{2!2!} \times 12 \times \frac{4!}{2!2!} \times 11 \times 4}{{\left( \begin{array}{cc}52 \\ 5\end{array} \right)}}\\
+    &= \frac{13 \tiimes 36 \times 12 \times 11 \times 4}{{\left( \begin{array}{cc}52 \\ 5\end{array} \right)}} \\
+    &=4.75\%
+\end{align*}
+Probabilité de obtenir un Brelan:\\
+$\Pro(B) = [\text{3 cartes de meme valeur}] \times [ \text{4eme carte} ] \times  [\text{5eme carte}$ ]\\
+$\Pro(B) = [][][]$
+\begin{align*}
+    \Pro(B) &= {\left( \begin{array}{cc}13 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}4 \\ 3\end{array} \right)} \times {\left( \begin{array}{cc}12 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}4 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}11 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}4 \\ 1\end{array} \right)}\\
+    &= \frac{13 \times 4 \times 12 \times 4 \times 11 \times 4}{{\left( \begin{array}{cc}52 \\ 5\end{array} \right)}}\\
+    &=2.11\%
+\end{align*}
+Probabilité de obtenir un Full:\\
+%$\Pro(F) = \text{1 value principal} \times \text{3 cartes} \times \text{} \times { text{}$\\
+\begin{align*}
+    \Pro(F) = {\left( \begin{array}{cc}13 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}4 \\ 3\end{array} \right)} \times {\left( \begin{array}{cc}12 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}4 \\ 2\end{array} \right)} &= \frac{13!}{1!12!} &\times \frac{4!}{1!} &\times \frac{12!}{11!} &\times \frac{4!}{2!2!} \\&= 13 &\times \frac{4!}{1!} &\times 12 &\times \frac{4!}{2!2!} \\&= \frac{13\times12\times(4!)^2}{4} \\
+    &= 13 \time3\time(4!)^2 \\
+    &= \frac{13\times3\times(4!)^2}{{\left( \begin{array}{cc}52 \\ 5\end{array} \right)}}
+\end{align*}
+Probabilité de obtenir un Carré:\\
+\begin{equation*}
+    \Pro(Ca) = \frac{{\left( \begin{array}{cc}13 \\ 1\end{array} \right)} \times {\left( \begin{array}{cc}12 \\ 1\end{array} \right)} \times 4}{{\left( \begin{array}{cc}52 \\ 3\end{array} \right)}} = \frac{13 \times 12 \times 4}{{\left( \begin{array}{cc}52 \\ 5\end{array} \right)}} = \frac{1}{4165} =* 0.024\%
+    %aproximadamente
+\end{equation*}
+Probabilité de obtenir un Quinte:\\
+\begin{equation*}
+    \Pro(Q) = \frac{10\times4^5}{{\left( \begin{array}{cc}52 \\ 5\end{array} \right)}} = \frac{128}{32487} = 0.39\%
+\end{equation*}
+Probabilité de obtenir un Quinte Flush:\\
+\begin{equation*}
+    \Pro(Qf) = \frac{10 \times {\left( \begin{array}{cc}4 \\ 1\end{array} \right)}}{{\left( \begin{array}{cc}52 \\ 5\end{array} \right)}} = \frac{1}{64970} = 0.015\%
+\end{equation*}
+Probabilité de obtenir un Quinte Flush Royale:\\
+\begin{equation*}
+    \Pro(Qfr) = \frac{4 \times 1}{{\left( \begin{array}{cc}52 \\ 5\end{array} \right)}} = \frac{1}{649740} = 0.00015\%
+\end{equation*}
+Probabilité de obtenir AU MOINS un pair:\\
+\begin{align*}
+    \Pro(J) &= 1 - \frac{{\left( \begin{array}{cc}13 \\ 5\end{array} \right)} \times {{\left( \begin{array}{cc}4 \\ 1\end{array} \right)}}^5}{{\left( \begin{array}{cc}52 \\ 5\end{array} \right)}} \\
+    &= 1 - \frac{\frac{13!}{5!8!} \times 4^5}{\frac{52!}{5!47!}} \\
+    &= 1 - \frac{\frac{13!}{8!} \times 4^5 \times 47!}{52!}\\
+    &= 1 - \frac{13 \times 12 \times 11 \times 10 \times 1}{52 \times 51 \times 50 \times 49 \times 48} \times 4^5
+\end{align*}
+
