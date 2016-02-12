@@ -1,0 +1,39 @@
+\subsection*{Exercice 5 [CORRIGÉ 2 FÉVRIER]}
+\textit{On tire deux cartes d’un jeu de 52 cartes. Soit A l’événement ”les deux cartes ont la même valeur” et B l’événement ”les deux cartes ont la même couleur”. Etudier l’indépendance des événements A et B dans les cas suivants :}
+\\
+    \\
+        $\forall{e} \in \Omega$   $\Pro(e) = \frac{1}{|\Omega|}$
+    \\
+    $A$ et $B$ sont independent, donc: $ \Pro(A \cap B) = \Pro(A) \times \Pro(B)$
+\begin{itemize}
+    \item[(A)]  \textit{on remet dans le jeu la première carte avant de tirer la seconde}
+    \\
+    $\Pro(A) = \frac{52 \times 4}{52^2} = \frac{1}{13}$
+    \\
+    \\
+    $\Pro(B) = \frac{52 \times 13}{52^2} = \frac{1}{4}$
+    \\
+    \\
+    $\Pro(A \cap B) = \frac{52 \times 1}{52^2} = \frac{1}{52}$
+     \\
+    \\
+    $\Pro_B(A) = \frac{\Pro(B \cap A)}{\Pro(B)} = \frac{\frac{1}{52}}{\frac{1}{4}} = \frac{1}{13}$
+    \\
+    \\
+    $\Pro(A \cup B) = \frac{1}{52} = \Pro(B)$
+    
+    \item[(B)]  \textit{on tire les deux cartes simultanément.}
+    \\
+    $\Omega = \{(a,b), a \neq b\} \\
+    |\Omega| = 52 \times 51 $
+    \\
+    $\Pro(A) = \frac{52 \times 3}{52 \times 51} = \frac{3}{51}$
+    \\
+    \\
+    $\Pro(B) = \frac{52 \times 12}{52 \times 51} = \frac{12}{51}$
+    \\
+    \\
+    $\Pro(A \cap B) = \Pro(\{\}) = 0 \text{   Donc, don independants}
+    
+
+\end{itemize}
