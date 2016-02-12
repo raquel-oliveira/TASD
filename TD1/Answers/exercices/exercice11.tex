@@ -1,0 +1,23 @@
+\subsection*{Exercice 11 [CORRIGÉ 9 FÉVRIER]}
+\textit{Les nouvelles plaques d’immatriculation des trotinettes sont formées de 6 lettres différentes de l’alphabet (A-Z). Chaque combinaison est équiprobable. Vous achetez une nouvelle trotinette. Quelle est la probabilité d’avoir les 6 lettres de votre plaque d’immatriculation dans l’ordre alphabétique ?}\\
+\begin{equation*}
+A < B < C ... < Z
+\end{equation*}
+ordre: 
+$\left\{\begin{array}{l}
+x_1, x_3 ... x_6 \\
+\forall i , x_i < x_{i+1}
+\end{array}$
+\\
+
+
+$25 \times 25 \times 24 \times 23 \times 22 \times 21 = \frac{26!}{20!}$ \\
+\\
+O = "La plaque est ordenée"\\
+L = "La plaque cotinent les letres 'A''B', ...'F' " \\
+$\Pro(L) = \frac{6!}{26! \times 20!} = \frac{6!20!}{26!} = \frac{1}{\left( \begin{array}{cc}
+26 \\ 
+6\end{array} \right)}$
+
+\\
+$\Pro_L(O) = \frac{\Pro(L \cap O)}{\Pro(L)} = \frac{1}{6!} = \Pro(O) $ car O et L sont independents$
