@@ -1,0 +1,35 @@
+\subsection*{Exercice 14} %[CORRIGÉ 2 FÉVRIER]
+\textit{On jette n fois une pièce de monnaie et on note $f_n$ le nombre de cas possibles où deux piles n’apparaissent pas successivement.}
+\begin{itemize}
+    \item[(A)]  \textit{Combien valent $f_1$ et $f_2$}
+    \\
+    \\
+    $\Omega = \{\{p\},\{f\}\}$ \\ 
+    $f_1 = 2$
+    \\
+    \\
+    $\Omega = \{\{p,f\},\{f, p\}, \{f, f\},\{p, p\}\}$ \\ 
+    $(f_2) = 3$ 
+    \\
+    \item[(B)]  \textit{Montrer que $f_n$ = $f_{n-1}$ + $f_{n-2}$}\\
+    Suit recurrent lineaire:
+    $I = f_3 = f_2 + f_2$ \\
+    $\alpha^2 = \alpha + 1 \\
+    \Delta = 5 \\
+    \alpha_1 = \frac{1+ \sqrt{5}}{2} \\
+    \alpha_2 = \frac{1- \sqrt{5}}{2} \\$
+    
+\begin{align*}
+    %$\alpha_n &= A \alpha_1^n + B\alpha_2^n\\
+    %\alpha_1 &= A \alpha_1 + B\alpha_2 = 2\\
+    %\alpha_2 &= A \alpha_1^2 + B\alpha_2^2 = 3\\
+    %&=  nn$
+\end{align*}
+    
+    \item[(C)]  \textit{Calculer $f_n$ et la probabilité pour que sur n lancers il y ait au moins deux piles successifs.}
+    \\
+    \\
+    $\Pro(p \geq 1) = 1 - \Pro(p < 1) = 1 -\sum_{i = 0}^{0}$ je sais pas
+\end{itemize}
+    
+    
