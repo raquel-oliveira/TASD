@@ -1,0 +1,17 @@
+\subsection*{Exercice 39}
+\textit{Soit X une variable aléatoire discrète qui suit une loi
+géométrique. Montrer que
+$\forall n, k \in \N, \Pro(\{X=n+k\}/\{X>k\})=\Pro(X=n)$}\\
+\\
+$X \sim \text{loi trigonométrique de parametres} \\
+\forall n, k, \Pro(X = n + k | x > k) = P (x = n) \\
+\Pro (X = i)  = (1-p) ^{i-1}p\\
+\Pro(A|B) = P_B(A)          \text{//Section A.4}\\
+\Pro_B(A) = \frac{P(A \cap B)}{\Pro(B)} \\$
+\begin{align*}
+   $ \Pro (x = n+k| x > k) &= \frac{\Pro(X = n+k \cap x > k)}{\Pro(x>k)}\\
+   &= \frac{\Pro(X = n+k)}{\Pro(X>k)}\\
+   \Pro(x=n+k| x >k) &=\frac{(A-p)^{n+k-1}p}{\Pro(X=k+1 \cup X=k+2 \cup ...) & \text{//Section A.2}\\
+   \sum_{i=k+1}^{+\infty}\Pro(X=i) \\
+   &= \frac{(1-p)^{n+k-1} p}{\sum_{i=k+1}^{+\infty}(1-p)^{i-1} p$
+\end{align*}
