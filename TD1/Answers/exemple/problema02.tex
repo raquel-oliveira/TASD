@@ -1,0 +1,102 @@
+\subsection*{Problema 2}
+
+\textit{
+  Seja $\R$  o conjunto de  todos os números  reais e seja  $\R^{+}$ o
+  conjunto de todos os número reais \textit{positivos}.  Então, mostre
+  que  $\R^{+}$ é  um espaço  vetorial  sobre $\R$  quando munido  das
+  operações de  adição (denotada  por $\boxplus$) e  multiplicação por
+  escalar (denotada por $\boxdot$) a seguir:}
+\begin{itemize}
+\item[(A)]  \textit{$\alpha \boxplus \beta  = \alpha  \cdot \beta$,  para todo
+  $\alpha, \beta \in \R^+$.}
+%resposta a
+    \begin{itemize}
+        %\item[(EV-A)]
+        %Então, \forall \alpha, \beta \in \R^{+}, \alpha \cdot \beta \boxplu
+       % $\forall p, q \in \R_{+}$, $p \cdot q \in \R_{+}$. Logo, para todos:\\
+%$(\alpha, \beta) \in R^{+}$ = (\alpha) \boxplus (\beta) \in R^{+}$.
+        \item [(EV-A1)] $\forall (\alpha, \beta) \in \R^+$
+            \begin{align*}
+                \alpha \boxplus \beta &= \alpha \cdot \beta & \\
+                 &= \beta \cdot \alpha \\
+                 &= \beta \boxplus \alpha
+            \end{align*}
+        %\item[(EV-A2]) \forall $\alpha, \beta \in \R^+$
+        %\begin{align*}
+        %\alpha \boxplus \beta &= (\alpha \boxplus \beta) \\
+        %&= (\alpha \cdot(\beta)) \\
+        %&= (\alpha (\cdot \beta))
+        %&= (\alpha \boxplus \beta) \\
+        %\end{align*}
+        \item
+        
+        \item[(EV-A3)] $\forall \alpha, \beta \in R^{+}$ \\
+            \begin{align*}
+            1 \boxplus a &= 1 \cdot a \\
+            &= a
+            \end{align*}
+        \item[(EV-A4)] $\forall \K \in \R$, se $\K >0$, então $\K^{-1} > 0$. Então, $\forall \alpha \in \R^{+}$ existe $\alpha^{-1} \in \R^{+}$.
+            \begin{align*}
+            \alpha \boxplus \alpha^{-1} &= \alpha \cdot \alpha^{-1} \\
+            &= 1
+            %semperdadegenrealidade
+            \end{align*}
+    \end{itemize}
+%fim de resposta a
+\item[(M)]  \textit{$a \boxdot  \alpha =  \alpha^a$, para  todo $a  \in  \R$ e $\alpha \in \R^+$.}
+\end{itemize}
+%resposta b
+\begin{itemize}
+
+\item [(EV-M1)] $\forall \alpha, \beta \in \K \text{ e } \bm{v} \in R^{+}$, 
+\begin{align*}
+    (\alpha \cdot \beta)\boxdot v
+    &= v^{\alpha \cdot \beta} \\
+    &= v^{\beta \cdot \alpha} \\
+    &= (v^\beta)^\alpha \\
+    &= (\beta \boxdot v)^\alpha \\
+    &= \alpha \boxdot (\beta \boxdot v) \\
+\end{align*}
+
+
+\item [(EV-M2)] $\forall \alpha \in R^{+}$,
+\begin{align*}
+    1 \cdot \alpha &= \alpha ^1 \\
+              &= \alpha
+%sem perda de generalidade
+\end{align*}
+\end{itemize}
+
+\begin{itemize}
+\item [(EV-D1)] $\forall \alpha \in \R \text{ e } \forall u, v \in \R^{+}$,
+    \begin{align*}
+        \alpha \boxdot (u \boxplus v) &= \alpha \boxdot (u \cdot v) \\
+        &= \alpha^{u \cdot v} \\
+        &= \alpha^u \cdot \alpha^v \\
+        &= (\alpha \boxdot u) \cdot (\alpha \boxdot v) \\
+        &= (\alpha \boxdot u) \boxplus (\alpha \boxdot v)
+    \end{align*}
+
+\item [(EV-D2)] $\forall \alpha, \beta \in \R \text{ e } \forall v \in \R^{+}$,
+
+\begin{align*}
+    (\alpha + \beta) \boxdot v
+    &= v^(\alpha + \beta) \\
+    &= v^\alpha \cdot v^\beta \\
+    &= (v^\alpha) \boxplus (v^\beta) \\
+    &= (\alpha \boxdot v) \boxplus (\beta \boxdot v) \\
+\end{align*}
+
+\end{itemize}
+%fim de resposta b
+\textit{Você acha  que $\R^+$  também seria um  espaço vetorial sobre  $\R$ se
+tivéssemos definido a  operação de \textit{multiplicação por escalar},
+M, acima da forma a seguir? Justifique a sua res\-pos\-ta.}
+\[
+a \boxdot  \alpha = a^{\alpha},~\text{para  todo $a \in \R$  e $\alpha
+  \in \R^+$.}
+\]
+Não. Pois não irá satisfazer a condição de: \\
+Se $\alpha, \beta \in \R^{+}$ então $\alpha \boxplus \beta \in \R^{+}$
+
+

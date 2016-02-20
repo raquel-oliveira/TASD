@@ -1,0 +1,92 @@
+\subsection*{Problema 3}
+\textit{Seja
+\[
+V = \{ ( a , b ) \in \R^2 \mid a , b > 0 \} \, .
+\]
+Sobre  $V$,  definimos as  operações  de  adição  e multiplicação  por
+escalar, respectivamente, como:}
+\begin{itemize}
+\item[(A)] \textit{ $( a , b ) \boxplus ( c , d ) = ( a \cdot c , b \cdot d )$, para todo $(a,b), (c,d)
+\in V$.}
+
+\item[(M)] \textit{ 
+$\alpha \boxdot ( a , b ) = ( a^{\alpha} , b^{\alpha} )$, para todo
+$\alpha \in \R$ e todo $( a , b ) \in V$.}
+\end{itemize}
+
+\textit{ Prove que o  conjunto $V$, munido das operações $A$ e  $M$ acima, é um
+espaço vetorial sobre $\R$. }
+
+\begin{proof} Mostraremos que $V$ satisfaz todas as propriedades de um espaço vetorial.
+\begin{itemize}
+\item [(EV-A)] Para todos $p, q \in \R_{>0}$, $p \cdot q \in \R_{>0}$. Logo, para todos
+$(a, b), (c, d) \in V$, $(a \cdot c, b \cdot d) = (a, b) \boxplus (c, d) \in V$.
+
+\item [(EV-A1)] Para todos $(a, b), (c, d) \in V$
+\begin{align*}
+ (a, b) \boxplus (c, d) &= (a\cdot c, b\cdot d) \tag{A} \\
+ &= (c\cdot a, d\cdot b) \\
+ &= (c, d) \boxplus (a, b) \tag{A}
+\end{align*}
+
+\item [(EV-A2)] Para todos $(a, b), (c, d), (e, f) \in V$
+\begin{align*}
+((a, b) \boxplus (c, d)) \boxplus (e, f) &= (a \cdot c, b\cdot d) \boxplus (e, f) \tag{A}\\
+ &= ((a \cdot c) \cdot e, (b\cdot d) \cdot f) \\
+ &= (a \cdot (c \cdot e), b\cdot (d \cdot f)) \\
+ &= (a, b) \boxplus (c\cdot e, d\cdot f) \tag{A} \\
+ &= (a, b) \boxplus ((c, d) \boxplus (e, f)) \tag{A}
+\end{align*}
+
+\item [(EV-A3)] Para todo $(a, b) \in V$
+\begin{align*}
+ (1, 1) \boxplus (a, b) &= (1 \cdot a, 1\cdot b) \tag{A}\\
+ &= (a, b)
+\end{align*}
+
+Logo, $(1, 1)$ é o vetor nulo de $V$.
+
+\item [(EV-A4)] Para todo $k \in \R$, se $k > 0$ então $k^{-1} > 0$. Logo, para todo $(a, b) \in V$ existe $(a^{-1}, b^{-1}) \in V$, e
+\begin{align*}
+ (a, b) \boxplus (a^{-1}, b^{-1}) &= (a \cdot a^{-1}, b\cdot b^{-1}) \tag{A} \\
+ &= (1, 1)
+\end{align*}
+ 
+\item [(EV-M)] Para todos $a \in \R_{>0}, \alpha \in \R$, $a^\alpha \in \R_{>0}$. Logo, 
+para todo $(a, b) \in V$ e todo $\alpha \in \R$, $\alpha \boxdot (a, b) \in V$.
+
+\item [(EV-M1)] Para todos $m, n \in \R$ e $(a, b) \in V$.
+\begin{align*}
+  (m\cdot n) \boxdot (a, b) &= (a^{m\cdot n}, b^{m\cdot n}) \tag{M}\\
+    &= (a^{n\cdot m}, b^{n\cdot m})\\
+    &= ((a^n)^m, (b^n)^m) \\
+    &= m \boxdot (a^n, b^n) \tag{M}\\
+    &= m \boxdot (n \boxdot (a, b)) \tag{M}
+\end{align*}
+
+\item [(EV-M2)] Para todo $(a, b) \in V$,
+\begin{align*}
+    1 \boxdot (a, b) &= (a^1, b^1) \tag{M}\\
+    &= (a, b)
+\end{align*}
+
+\item [(EV-D1)] Para todos  $(a, b), (c, d) \in V$ e $\alpha \in \R$,
+\begin{align*}
+ \alpha \boxdot ((a, b) \boxplus (c, d)) &= \alpha \boxdot (a\cdot c, b \cdot d) \tag{A}\\
+ &= ((a\cdot c)^\alpha, (b \cdot d)^\alpha) \tag{M}\\
+ &= (a^\alpha\cdot c^\alpha, b^\alpha \cdot d^\alpha) \\
+ &= (a^\alpha, b^\alpha) \boxplus (a^\alpha\cdot c^\alpha, d^\alpha) \tag{A}\\
+ &= (\alpha \boxdot (a, b)) \boxplus (\alpha \boxdot (c, d)) \tag{M}
+\end{align*}
+
+\item [(EV-D2)] Para todos  $(a, b) \in V$ e $\alpha, \beta \in \R$,
+\begin{align*}
+    (\alpha + \beta) \boxdot (a, b) &= (a^{\alpha + \beta}, b^{\alpha + \beta}) \tag{M} \\
+    &= (a^\alpha \cdot a^\beta, b^\alpha \cdot b^\beta) \\
+    &= (a^\alpha, b^\alpha) \boxplus (a^\beta, b^\beta) \tag{A} \\
+    &= (\alpha \boxdot (a, b)) \boxplus (\alpha \boxdot (a, b)) \tag{M} \\
+\end{align*}
+
+\end{itemize}
+
+\end{proof}

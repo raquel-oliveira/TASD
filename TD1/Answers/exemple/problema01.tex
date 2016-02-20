@@ -1,0 +1,77 @@
+\subsection*{Problema 1}
+\textit{Seja
+\[
+\Pi = \{ ( x , y , z ) \in \R^3 \mid x + y + z  = 0 \}
+\] 
+um plano que passa pela origem,  $O = (0,0,0)$, de $\R^3$ com respeito a um sistema de eixos ortogonais fixado. Mostre  que o conjunto, $S$, de todos os vetores da  forma $\overrightarrow{OP}$, onde $P \in \Pi$, é  um $\R$-espaço  vetorial quando  munido das  operações de  adição e multiplicação  por   escalar  definidas  para   o  $\mathbb{K}$-espaço vetorial, $\mathbb{K}^n$,  onde $\mathbb{K}$  é um corpo,  definido em sala de aula.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Como ${R}^3$ é um espaço vetorial, então $\Pi$ é um espaço vetorial se e somente se ele é um sub-espaço de ${R}^3$. Logo, $\Pi$ é um espaço vetorial se ele é munido das seguintes propriedades:
+
+
+
+
+
+%comentários - raquel
+%\begin{itemize}
+%\item[(EV -A] Seja $a, b, c, d, e, f \in \Pi$ então:\\
+%    \begin{align*}
+%    (a, b, c) + (d, e, f) & 
+%    (a+d, b+e, c+f)
+%    \end{align*}
+%\item [(EV-A3)] Existe um vetor, denominado \textbf{vetor nulo}, e denotado por $\bm{0}$, tal que $\bm{0} + \bm{v} = \bm{v}, \forall \bm{v} \in V$.
+%\item soma sendo d,e,f = (0,0,0) para que a soma dê (a, b, c). Ou seja, há elemento nulo. Devido a "x+y+z=0"
+%\item multiplicação por um escalar => \alpha \cdot (a, b, c) = (\alpha \cdot a, \alpha \cdot b, \alpha \cdot c)
+%\end{itemize}
+%-fim comentarios raquel
+
+
+
+
+%Tem que provar isso:
+(i) $\bm{0} \in \Pi$
+
+Deve existir um vetor nulo $\bm{0}$ tal que $\bm{0} + \bm{v} = \bm{v}$, para $\bm{v} \in \Pi$ arbitrário. 
+
+Sendo $\bm{v} = (a, b, c)$ e $\bm{0} = (x, y, z)$,
+    \begin{align*}
+    (x, y, z) + (a, b, c) & = (a, b, c) \tag{EV-A3} \\
+    (x + a, y + b, z + c) &= (a, b, c) \tag{EV-A}
+    \end{align*}
+O que resulta nas seguintes igualdades:
+    \begin{align*}
+    x + a = a \\
+    y + b = b \\
+    z + c = c  \\
+    x = y = z = 0
+    \end{align*}
+Como $x + y + z = 0 + 0 + 0 = 0$, mostramos que $\bm{0} \in \Pi$ \\
+
+(ii) Se $\bm{u}, \bm{v} \in \Pi$ então $\bm{u} + \bm{v} \in \Pi$
+
+Sejam $\bm{u}  = (a, b, c) $ e $\bm{v} = (d, e, f) \in \Pi$. Então,
+    \begin{align*}
+    \bm{u} + \bm{v} & = (a, b, c) + (d, e, f) \tag{Definição de $\bm{u}$ e $\bm{v}$} \\ 
+    & = (a+d, b+e, c+f) \tag{EV-A}
+    \end{align*}
+Como $(a + b + c) = (d + e + f) = 0$, 
+    \begin{align*}
+    (a + b + c) = (d + e + f) = 0 \\
+    ((a+d) + (b+e) + (c+f)) = 0
+    \end{align*}
+mostrando que $\bm{u} + \bm{v} \in \Pi$. \\
+
+(iii) Se $\bm{v} \in \Pi$ e $\alpha \in \R$ então $\alpha\bm{v} \in \Pi$ 
+
+Sendo $\bm{v} = (a, b, c)$, 
+    \begin{align*}
+    \alpha\bm{v} &= \alpha(a, b, c) \tag{EV-M} \\
+    &= (\alpha a, \alpha b, \alpha c) \\
+    \alpha a + \alpha b + \alpha c &= \alpha (a + b + c)
+    \end{align*}
+Como $\bm{v} \in \Pi$, $a + b + c = 0$. Sendo assim,
+    \begin{align*}
+    \alpha (a + b + c) &= \alpha 0\\
+    &= 0,
+    \end{align*}
+mostrando, portanto, que $\alpha\bm{v} \in \Pi$

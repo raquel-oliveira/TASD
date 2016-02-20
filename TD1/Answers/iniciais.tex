@@ -1,0 +1,114 @@
+\section{Considerações Iniciais}
+
+\subsection{Definição de Corpo}
+
+Um conjunto não vazio $\K$ é um \textbf{corpo}
+se em seus elementos, estiverem definidas
+duas operações, denominadas \textbf{adição} e \textbf{multiplicação}
+que gozam das seguintes propriedades:
+
+\begin{itemize}
+\item[(C-A)] Para cada par $a$, $b$ de elementos de $\K$ corresponde um
+$a + b \in V$, de modo que
+\item[(C-A1)]
+    $a + b = b + a, \forall{a, b} \in \K$
+\item[(C-A2)]
+    $a + (b + c) = (a + b) + c, \forall{a, b,c} \in \K $
+\item[(C-A3)] Existe um elemento em $\K$, denotado por 0, tal que
+    $ 0 + a = a, \forall{a} \in \K$
+\item[(C-A4)] Para cada $a \in \K$, existe um elemento em K, denotado $-a$ tal que
+    $a + (-a) = (-a) + a = 0$ 
+    
+\item [(C-M)] Para cada par $a$, $b$ de elementos de $\K$ corresponde um
+$a \cdot b \in V$, de modo que
+\item[(C-M1)]
+    $a \cdot b = b \cdot a, \forall{a, b} \in \K$
+\item[(C-M2)]
+    $a \cdot (b \cdot c) = (a \cdot b) \cdot c, \forall{a, b, c} \in \K$
+\item[(C-M3)] Existe um elemento em $\K$, denotado por 1, tal que 
+    $ 1 \cdot a = a, \forall{a} \in \K$
+\item[(C-M4)] Para cada elemento não nulo $a \in \K$, existe um elemento em $\K$, denotado por $a^{-1}$, tal que 
+    $a^{-1} \cdot a = a \cdot a^{-1} = 1$ 
+\item[(C-D)]
+    $(a + b) \cdot c = a \cdot c + b \cdot c, \forall{a,b,c} \in \K$
+\end{itemize}
+
+%\newpage
+
+\subsection{Definição de Espaço Vetorial}
+
+Um conjunto não vazio $V$ é um \textbf{espaço vetorial sobre (um corpo) $\K$}
+se em seus elementos, denominados \textbf{vetores}, estiverem definidas
+duas operações, denominadas \textbf{soma} e \textbf{multiplicação por escalar}
+(um elemento de $\K$) que gozam das seguintes propriedades:
+
+\begin{itemize}
+\item [(EV-A)] A cada par $\bm{u}$, $\bm{v}$ de vetores de $V$ corresponde um vetor
+$\bm{u} + \bm{v} \in V$, chamado \textbf{soma de $\bm{u}$ e $\bm{v}$}, de modo que
+\item [(EV-A1)] $\bm{u} + \bm{v} = \bm{v} + \bm{u}, \forall \bm{u},\bm{v} \in V$
+\item [(EV-A2)] $(\bm{u} + \bm{v}) + \bm{w} = \bm{u} + (\bm{v} + \bm{w}), \forall \bm{u},\bm{v},\bm{w} \in V$
+\item [(EV-A3)] Existe um vetor, denominado \textbf{vetor nulo}, e denotado por
+$\bm{0}$, tal que $\bm{0} + \bm{v} = \bm{v}, \forall \bm{v} \in V$.
+\item [(EV-A4)] Para cada vetor $\bm{v}$ em $ V$, existe um vetor em $V$,
+denotado por $-\bm{v}$ e denominado simétrico ou negativo, tal que
+$\bm{v} + (-\bm{v}) = (-\bm{v}) + \bm{v} = \bm{0}$.
+\end{itemize}
+
+\begin{itemize}
+\item [(EV-M)] A cada par $\alpha \in \K$ e $\bm{v} \in V$ corresponde um
+vetor $\alpha \cdot \bm{v} \in V$, chamado \textbf{produlo escalar de $\alpha$ por $\bm{v}$}, de modo que
+\item [(EV-M1)] $(\alpha \cdot \beta)\cdot \bm{v} = \alpha \cdot (\beta \cdot \bm{v}), \forall \alpha, \beta \in \K \text{ e } \bm{v} \in V$
+\item [(EV-M2)] $1 \cdot \bm{v} = \bm{v}, \forall \bm{v} \in V$
+\end{itemize}
+
+\begin{itemize}
+\item [(EV-D1)] $\alpha \cdot (\bm{u} + \bm{v}) = \alpha \cdot \bm{u} + \alpha \cdot \bm{v}, \forall \alpha \in \K \text{ e } \forall \bm{u},\bm{v} \in V$.
+\item [(EV-D2)] $(\alpha + \beta) \cdot \bm{v} = \alpha \cdot \bm{v} + \beta \cdot \bm{v}, \forall \alpha, \beta \in \K \text{ e } \forall \bm{v} \in V$.
+
+\end{itemize}
+
+\subsection{Proposições Auxiliares}
+
+\begin{proposition} \label{leftnull} Sejam $V$ um espaço vetorial sobre $\K$,
+$0$ o elemento neutro da adição em $\K$ e $\bm{0}$ o vetor nulo em $V$.
+Para todo $\bm{v} \in V$, $0 \bm{v} = \bm{0}$.
+\end{proposition}
+
+\begin{proof}
+\begin{align*}
+  0 \bm{v} &= (0 + 0) \bm{v} \tag{C-A3} \\
+  0 \bm{v} &= 0 \bm{v} + 0 \bm{v} \tag{EV-D2} \\
+  0 \bm{v} + (-(0 \bm{v})) &= (0 \bm{v} + 0 \bm{v}) +(-(0 \bm{v})) \tag{EV-A} \\
+  0 \bm{v} + (-(0 \bm{v})) &= 0 \bm{v} + (0 \bm{v} +(-(0 \bm{v}))) \tag{EV-A2} \\
+  0 \bm{v} &= 0 \tag{EV-A4}
+\end{align*}
+\end{proof}
+
+\begin{proposition} \label{rightnull} Sejam $V$ um espaço vetorial sobre $\K$,
+e $\bm{0}$ o vetor nulo em $V$. Para todo $\alpha \in \K$, $\alpha \bm{0} = \bm{0}$.
+\end{proposition}
+
+\begin{proof}
+\begin{align*}
+  \alpha \bm{0} &= \alpha (\bm{0} + \bm{0}) \tag{EV-A3} \\
+  \alpha \bm{0} &= \alpha \bm{0} + \alpha \bm{0} \tag{C-D2} \\
+  \alpha \bm{0} + (-(\alpha \bm{0})) &= (\alpha \bm{0} + \alpha \bm{0}) + (-(\alpha \bm{0})) \tag{EV-A} \\
+  \alpha \bm{0} + (-(\alpha \bm{0})) &= \alpha \bm{0} + (\alpha \bm{0} + (-(\alpha \bm{0}))) \tag{EV-A2} \\
+  \alpha \bm{0} &= \bm{0} \tag{EV-A4}
+\end{align*}
+\end{proof}
+
+\begin{proposition} \label{inverse} Seja $V$ um $\K$-espaço vetorial. $\forall \bm{v} \in V$, $-\bm{v} = (-1) \bm{v}$.
+    \begin{proof}
+        \begin{align*}
+          \bm{v} + (-\bm{v}) &= \bm{0} \tag{EV-A4} \\
+          1 \bm{v} + (-\bm{v}) &= \bm{0} \tag{EV-M2} \\
+          (-1) \bm{v} + 1 \bm{v} + (-\bm{v}) &= (-1) \bm{v} + \bm{0}\\
+          (-1) \bm{v} + 1 \bm{v} + (-\bm{v}) &= (-1) \bm{v} \tag{EV-A3}\\
+          ((-1) + 1) \bm{v} + (-\bm{v}) &= (-1) \bm{v} \tag{EV-D2}\\
+          0 \bm{v} + (-\bm{v}) &= (-1) \bm{v} \tag{C-A4}\\
+          \bm{0} + (-\bm{v}) &= (-1) \bm{v} \tag{Proposição \ref{leftnull}}\\
+          -\bm{v} &= (-1) \bm{v} \tag{EV-A3}
+        \end{align*}
+    \end{proof}
+\end{proposition}
