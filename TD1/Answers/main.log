@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.20)  23 FEB 2016 09:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.20)  23 FEB 2016 09:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1026,113 +1026,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--33
 
  []
 
-) (./exercices/exercice17.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--17
-
- []
-
-
-Overfull \hbox (43.85884pt too wide) detected at line 21
-\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 
-\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 = [] = [] = [] = 10[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--23
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
-
- []
-
-
-Overfull \hbox (48.3825pt too wide) in paragraph at lines 31--31
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
-
- []
-
-! Undefined control sequence.
-<argument> 13 \tiimes 
-                      36 \times 12 \times 11 \times 4
-l.38 \end{align*}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> 13 \tiimes 
-                      36 \times 12 \times 11 \times 4
-l.38 \end{align*}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 46--49
-
- []
-
-! Missing number, treated as zero.
-<to be read again> 
-                   (
-l.53 \end{align*}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing number, treated as zero.
-<to be read again> 
-                   (
-l.53 \end{align*}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-
-Overfull \hbox (38.46149pt too wide) in paragraph at lines 53--53
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
-
- []
-
-) (./exercices/exercice21.tex [6]
+) (./exercices/exercice21.tex [3]
 Overfull \hbox (27.28606pt too wide) in paragraph at lines 37--37
 [] 
  []
@@ -1143,39 +1037,62 @@ Overfull \hbox (11.76807pt too wide) in paragraph at lines 38--40
 Se p, et ce ind^^Sependamment
  []
 
-[7]) (./exercices/exercice27.tex) (./exercices/exercice34.tex [8]
+) (./exercices/exercice27.tex [4]) (./exercices/exercice29.tex [5] [6]
+! Undefined control sequence.
+<argument> ...ight )} = \frac {n!}{k!(n-k)!} \tex 
+                                                  { and } {\left ( \begin {a...
+l.53 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...ight )} = \frac {n!}{k!(n-k)!} \tex 
+                                                  { and } {\left ( \begin {a...
+l.53 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) (./exercices/exercice34.tex
 Overfull \hbox (50.59465pt too wide) in paragraph at lines 25--25
 [] 
  []
 
-) [9] (./main.aux) ) 
+[7]) [8] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 12364 strings out of 493089
- 250384 string characters out of 6134842
- 267099 words of memory out of 5000000
- 15689 multiletter control sequences out of 15000+600000
- 14963 words of font info for 55 fonts, out of 8000000 for 9000
+ 12377 strings out of 493089
+ 250514 string characters out of 6134842
+ 268099 words of memory out of 5000000
+ 15697 multiletter control sequences out of 15000+600000
+ 16992 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,16n,39p,10392b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-supe
-r/cm-super-ts1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pf
-b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.
-pfb>
-Output written on main.pdf (9 pages, 157077 bytes).
+ 39i,14n,39p,10392b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-s
+uper/cm-super-ts1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
+bm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm12
+00.pfb>
+Output written on main.pdf (8 pages, 155788 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
