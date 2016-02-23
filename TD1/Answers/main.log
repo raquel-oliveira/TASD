@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.20)  20 FEB 2016 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.20)  23 FEB 2016 09:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1143,34 +1143,39 @@ Overfull \hbox (11.76807pt too wide) in paragraph at lines 38--40
 Se p, et ce ind^^Sependamment
  []
 
-[7]) (./exercices/exercice27.tex) [8] (./main.aux) ) 
+[7]) (./exercices/exercice27.tex) (./exercices/exercice34.tex [8]
+Overfull \hbox (50.59465pt too wide) in paragraph at lines 25--25
+[] 
+ []
+
+) [9] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 12361 strings out of 493089
- 250324 string characters out of 6134842
+ 12364 strings out of 493089
+ 250384 string characters out of 6134842
  267099 words of memory out of 5000000
  15689 multiletter control sequences out of 15000+600000
  14963 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,16n,39p,10392b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/te
-xmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts
-/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (8 pages, 152521 bytes).
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-supe
+r/cm-super-ts1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
+fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm1
+0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.
+pfb>
+Output written on main.pdf (9 pages, 157077 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 87 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
