@@ -1,0 +1,48 @@
+\subsection*{Exercice 10 [CORRIGÉ 26 FÉVRIER]}
+\textit{Le joueur A possède deux dés à six faces, et le joueur B possède un dé à douze faces (un dodécaèdre). Le joueur qui fait le plus grand score remporte la mise (match nul si égalité). Le jeu est-il équitable ? On calculera la proba- bilité que A gagne et la probabilité d’avoir un match nul.}\\
+XA :2 dés à 6 faces\\
+XB: dé à 12 faces\\
+XA = $X_1 +X_2$
+\begin{align*}
+    \Pro(X_B = i) &= \frac{1}{12} | i \leq i \leq 12 \\
+    \Pro(X_A = i) &= \Pro((X_1 + X_2 = i) \text{ ou } (X_1 =2, X_2 = i-2) ...)\\
+    &= \sum_{k=1}^{i} \Pro(X_1 = k_i, X_2 = i-k)\\
+    \Pro(X_1 = i) = \frac{1}{6} | 1 \leq i \leq 6
+\end{align*}
+$X_1$, $X_2$ : independants
+\begin{align*}
+\sum_{k=1}^i [\Pro(X_2 = k) \times \Pro(X_2 = i -k)]    
+\end{align*}
+\begin{align*}
+    1 \leq k \leq 6 &\rightarrow k \leq max(i, 6)\\
+    (1 \leq i-k \leq 6 &\rightarrow h++ \leq i \leq h+6 & h \geq i-6) 
+\end{align*}
+\begin{align*}
+    &= \sum^{min(1,6)}_{max(1, i-6}[\Pro(X_1 = k) \times \Pro(X_2 = i -k) ]\\
+    &= \frac{1}{36}\sum_{max(1,i-6)}^{min(i,6)}1
+\end{align*}
+\begin{align*}
+    \text{Soit (f):} 2 \leq i \leq 7 &\Rightarrow min(i,6) =i \text{ et } max(i, i-6) =1\\
+    \text{Soit (r):} 7 \leq i \leq 12 &\Rightarrow min(i,6) =6 \text{ et } max(i, i-6) = i = 6
+\end{align*}
+\begin{align*}
+    (f) : \frac{1}{36}\sum_2^i1 = \frac{i-1}{36}\\
+    (r) : \frac{1}{36}\sum_{i-6}^{12}1 = \frac{13 - i}{36}\\
+    \Pro(X_A = i) = {\left\{ \begin{array}{cc}\frac{i-1}{36} \text{ si } 2 \leq i \leq 7\\ \frac{13-i}{36} \text{ si } 7\leq i \leq 12\end{array} \right\(}
+\end{align*}
+\begin{align*}
+    \Pro(X_A > X_B) &= \Pro((X_B=1 \text{ et }x_A>1)\text{ ou } (X_B=2 \text{ et }x_A>2)....)\\
+    &= \sum_{i=1}^{12}\Pro(X_B < i \text{ et }X_2=i)\\
+     &= \sum_{i=1}^{12}\Pro(X_A = i) \sum_{k=1}^{i-1}\Pro(X_B = k)\\
+     &= \frac{1}{12}\sum_{i=1}^{12}\Pro(X_A = i)\sum_{k=1}^{i-1}1\\
+     &= \frac{1}{12}\sum_{i=1}^{12}(i-1)\Pro(X_A = i)\\
+      &= \frac{1}{12}\sum_{i=1}^{12}i\Pro(X_A = i) - \frac{1}{12}\sum_{i=1}^{12}\Pro(X_A = i) = 1\\
+       &= \frac{E(X_A)}{12} - \frac{1}{12} = \frac{6}{12} = \frac{1}{12}
+\end{align*}
+
+
+\begin{align*}
+    \Pro(X_A > x_B) &= \frac{1}{2}\\
+    \Pro(X_A = x_B) &= \frac{1}{12}\\
+    \Pro(X_A < x_B) &= 1 - \frac{1}{2} - \frac{1}{12} = \frac{5}{12}
+\end{align*}
