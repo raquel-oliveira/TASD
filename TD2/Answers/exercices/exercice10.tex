@@ -1,0 +1,26 @@
+\subsection*{Exercice 10 }
+\textit{On suppose que la taille en centimètres d’un hu- main mâle de 25 ans suit une loi aléatoire normale de paramètre \textmu{}=175et $\sigma$=6.\\
+Quel est le pourcentage des hommes de 25 ans ayant une taille supérieure à 185 cm ?}
+\\
+\begin{multicols}{2}
+\begin{align*}
+    X \sim &\Pro(\mu,\sigma)\\
+    &\Pro(175, 6)
+\end{align*}
+\begin{align*}
+    &Y = \frac{X - \mu}{\sigma} \sim \N(0,1)\\
+    &X - \mu = y\sigma
+    \\&X =  y\sigma + \mu
+\end{align*}
+\end{multicols}
+\begin{align*}
+    \Pro(X \geq 185) &= 1 - \Pro(x < 185)\\
+    &= \Pro(X \leq 165)\\
+    &=\Pro(y\sigma + \mu \leq 165)\\
+    &=\Pro(y\leq \frac{165 - \mu}{\sigma})\\
+    &= F(\frac{165 -  \mu}{\sigma})\\
+    &= F( \frac{-10}{6})\\
+    &= f(-1,67)\\
+    &= 4,75 \%
+\end{align*}
+\textit{Parmi les hommes mesurant plus de 180 cm quel pour- centage mesure plus de 192 cm ?}\\
