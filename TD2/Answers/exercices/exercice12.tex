@@ -1,0 +1,54 @@
+\subsection*{Exercice 12}
+\textit{Au marathon de New York 2000, 29 327 coureurs ont terminé. On suppose que le temps de parcours d’un coureur peut être approximé par une loi normale.}
+\begin{itemize}
+    \item[(A)]  \textit{ Sachant que le $10 000^e$ arrivant a mis 4h01’ et que le $1000^e$ a mis 3h08’, quelles sont la moyenne m et l’écart-type sigma des temps de parcours ?}\\
+    \begin{align*}
+        \text{Le } 10000^e &\rightarrow 4h01'&\rightarrow \Pro(X \leq 4h01) = \frac{10000}{29327}\\
+        \text{Le } 1000^e &\rightarrow 3h08'&\rightarrow \Pro(X \leq 4h01) = \frac{10000}{29327}
+    \end{align*}
+    \begin{align*}
+        \text{X: Temps de parcour d'un coureur}\\
+        X \sim \N(\mu,\sigma)\\
+        Y = \frac{X - \mu}{\sigma} \sim (0,1)
+    \end{align*}
+    \begin{align*}
+        \Pro(X < 4h01) &= \Pro(Y \frac{4h01 - \mu}{\sigma}) &=\frac{10000}{29327} &= 0,34\\
+        &= F(\frac{4h01 - \mu}{\sigma}) &&= 0,34
+    \end{align*}
+    \begin{align*}
+        \frac{4h01 - \mu}{\sigma} &= F^{-1}(0,34) = -0,41\\
+        \frac{3h08 - \mu}{\sigma} &= F^{-1}(0,034) = -1,8
+    \end{align*}
+    \begin{displaymath}
+    \left\{ \begin{array}{ll}
+    4h01 &= (-0,41 \times \sigma) + \mu\\
+    3h07 &= (-1,8 \times \sigma) + \mu
+    \end{array} \right.
+    \left\{ \begin{array}{ll}
+    \mu &= 4h01 + 0,41\sigma\\
+    \mu &= 3h08 +1,8\sigma
+    \end{array} \right.
+    \end{displaymath}
+    \begin{align*}
+        \mu &= 241 + 0,4 \sigma\\
+        \mu &= 188 + 1,8 \sigma\\
+    \end{align*}
+    \begin{align*}
+        &241 + 0,4\sigma = 188 + 1,8\sigma\\
+        \Leftrightarrow &241 -177 = -0,4\sigma + 1,8 \sigma\\
+        \Leftrightarrow &53 = 139\sigma\\
+        \Leftrightarrow &\sigma = \frac{53}{1,39} = 38min
+    \end{align*}
+        \begin{align*}
+        \mu &= 241 + 0,41 \times 38\\
+        \mu &= 256min\\
+        \mu &= 4h16
+    \end{align*}
+    \item[(B)]\textit{Si vous aviez terminé en 3h48’, quel aurait été votre classement ?}
+    \begin{align*}
+        &\Pro(X \leq 3h48)\\
+        =&\Pro(Y \leq \frac{3h48 - 4h16}{0h38})\\
+        =&\Pro(Y \leq - 0,75)\\
+        =&23,0\%
+    \end{align*}
+    Classement = $29.327 \times 0,23 = 6628^{eme}$
