@@ -1,0 +1,113 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[brazil]{babel} %permite hifenação em português
+%\usepackage[brazilian]{babel} %permite hifenação em português
+\usepackage[utf8]{inputenc}
+%\DeclareUnicodeCharacter{00A0}{ }
+\usepackage{amssymb}
+%simbolos da AMS
+\usepackage{multicol}
+\usepackage{latexsym}		%simbolos do Latex
+\usepackage{amsfonts}		%fontes da AMS
+\usepackage{bbm}		%simbolos de conjuntos
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{indentfirst}	%faz parágrafo na primeira linha
+\usepackage{graphicx}		%inserção de gráficos ou figuras no texto
+\usepackage{a4wide} 		%aumenta a área de uso do papel a4
+\usepackage[all]{xy}		%pacote xypic
+\usepackage[normalem]{ulem}
+\usepackage{geometry}
+\pagestyle{empty}
+\usepackage[normalem]{ulem}
+\setlength{\parindent}{2cm}	%tamanho de cada parágrafo
+\usepackage{verbatim}
+%\listfiles			%lista arquivos usados na compilação
+%\setcounter{secnumdepth}{3}    %enumera até 3º nível de subseção
+
+%%% para fazer o histograma
+\usepackage{geometry}
+\geometry{margin=1in} 
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usetikzlibrary{calc,intersections,through,backgrounds,snakes}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.8}
+\usepgfplotslibrary{statistics}
+\usepackage{bchart}
+%%% fim dos packages necessrios para o histograma
+%%% Text Companion Fonts
+\usepackage{textcomp}
+
+\newtheorem{teo}{Teorema}
+\newtheorem{defi}[teo]{Definição}
+\newtheorem{cor}[teo]{Corolário}
+\newtheorem{lem}[teo]{Lema}
+\newtheorem{pro}[teo]{Proposição}
+\newtheorem{que}{Questão}
+%\newtheorem{axi}[theorem]{Axioma}
+
+
+\newenvironment{dem}[1][Demonstração]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\newenvironment{obs}[1][Observação]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\newenvironment{sol}[1][Solução]{\noindent\uline{#1:} }{}
+
+\newcommand{\dprod}{\displaystyle\prod}
+\newcommand{\dsum}{\displaystyle\sum}
+\newcommand{\grupoq}[2]{\raisebox{0.1cm}{${#1}$}\!/\!\raisebox{-0.18cm}{${#2}$}}
+\newcommand{\ex}[1]{\noindent{\bf  Exemplo {#1}}.\hspace*{0mm}}
+\newcommand{\exs}[1]{{\bf  Exemplos {#1}}.\hspace*{0mm}}
+\newcommand{\afir}[1]{{\bf Afirma\c c\~ao {#1}}:\hspace*{2mm}}
+\newcommand{\afi}{{\bf Afirma\c c\~ao}:\hspace*{2mm}}
+\newcommand{\F}{\mathbbmss{F}}
+\newcommand{\N}{\mathbbmss{N}}
+\newcommand{\Z}{\mathbbmss{Z}}
+\newcommand{\R}{\mathbbmss{R}}
+\newcommand{\Q}{\mathbbmss{Q}}
+\newcommand{\C}{\mathbbmss{C}}
+\newcommand{\Migual}{\geqslant}
+\newcommand{\migual}{\leqslant}
+\newcommand{\PP}{\mathscr{P}}
+\newcommand{\CC}{\mathscr{C}}
+\newcommand{\LL}{\mathscr{L}}
+\newcommand{\fff}{{\cal F}}
+\newcommand{\g}{{\cal G}}
+\newcommand{\bbb}{{\cal B}}
+\newcommand{\rrr}{I\!\!R}
+\newcommand{\Pro}{\mathbb{P}}
+\newcommand{\iid}{i.i.d.}
+\newcommand{\pN}{\mathcal{N}}
+\newcommand{\ddd}{\displaystyle}
+\usepackage{color}
+\usepackage{xcolor}
+%\newcommand{\resposta}[1]{\textcolor{blue}{[RESPOSTA: #1]}}
+\newcommand{\resposta}[1]{\textcolor{blue}{#1}}
+%\usepackage[linguistics]{forest}
+\usepackage{forest}
+
+\geometry{textwidth=16cm,textheight=23.5cm}%escolhendo o espaço útil do texto.
+
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{center}
+
+\textbf{Universidade Federal do Rio Grande do Norte\\
+Instituto de Ciências Exatas e da Terra\\
+Departamento de Estatística\\
+Disciplina:} ESTATISTICA APLICADA A ENGENHARIA I\\
+\textbf{Professora: }Kalline Fabiana Silveira\\
+\textbf{Aluna: }Raquel Lopes de Oliveira\\
+\vspace{0.5cm}
+\textbf{Lista - Segunda Unidade}\vspace{0.5cm}
+
+\end{center}
+
+
+\input{aleatorias}
+\newpage
+\input{distribuicao}
+
+\end{document}
