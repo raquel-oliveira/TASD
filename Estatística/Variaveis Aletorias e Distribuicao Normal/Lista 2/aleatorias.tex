@@ -134,8 +134,19 @@
 	    &= \frac{325\times 2600}{2598960}\\
 	    &=0.32513
 	\end{align*}} 
-	\item[\textbf{8.}] Numa Loteria, um apostador escolhe 6 números de 1 a 54. Qual a probabilidade dele acertar 5 números?
-	\resposta{} 
+	\item[\textbf{8.}] Numa Loteria, um apostador escolhe 6 números de 1 a 54. Qual a probabilidade dele acertar 5 números?\\
+	\resposta{
+	N = número de itens da população= 54\\
+	M = numero de itens da populacao que sao considerados como ``sucesso" =  6\\
+	n = numero de itens na amostra = 6\\
+	k = 5 (para as combinacoes)\\
+	\begin{align*}
+	    \Pro(X = k) &= \frac{C_k^MC_{n-k}^{N-M}}{C^N_n}\\
+	    \Pro(2) &= \frac{C_5^{6}C_{1}^{48}}{C^{54}_{6}}\\
+	    &= \frac{6\times48}{25827165}\\
+	    &= \frac{288}{25827165}\\
+	    &= 0.000011151
+	\end{align*}}  
 	\item[\textbf{9.}] Suponha-se que haja 50 pessoas, dos quais 34 são MULHERES e o restante são HOMENS. Extrai-se uma amostra aleatória de 15 pessoas, sem reposição. Qual a probabilidade de exatamente 5 pessoas serem do sexo FEMININO?
 	\resposta{} 
 	
