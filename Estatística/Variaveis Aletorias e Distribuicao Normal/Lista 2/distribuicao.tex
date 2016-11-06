@@ -4,7 +4,36 @@
 
 \begin{itemize}
 	\item[\textbf{1.}] Sejam X1 e X2 as v.a.’s que representam, respectivamente, os diâmetros do eixo e do soquete. Então $X_1 \pN( 3,42 ; 0,012 )$ e $X_2 \pN( 3,47 ; 0,022 ) $. Seja $Y =X_2 – X_1$. Suponha que, para efeitos de montagem, as componentes das peças são selecionadas ao acaso, e que eles só se encaixam se a folga estiver entre 0,025 cm e 0,100 cm. Qual a probabilidade do eixo se encaixar no soquete?\\
-	\resposta{}
+	
+	\resposta{
+	\begin{align*}
+	    \E(Y) &= \E(X_2) - \E(X_1)\\
+	    &= 3.47 - 3.42\\
+	    &= 0.05
+	\end{align*}
+	\begin{align*}
+	    \V(Y) &= \V(X_2) + \V(X_1)\\
+	    &= 0.022 + 0.012\\
+	    &= 0.034
+	\end{align*}
+	\begin{align*}
+        Y &\sim \N(\E(Y), \V(Y))\\
+        &\sim \N(0.05; 0.034)
+    \end{align*}
+	\begin{multicols}{2}
+    \begin{align*}
+      Z_1  &= \frac{0.025 - 0.05}{\sqrt{0.034}}\\
+       &= -0.14
+    \end{align*}
+    \begin{align*}
+       Z_2  &= \frac{0.1 - 0.05}{\sqrt{0.034}}\\
+       &= 0.27
+    \end{align*}
+    \end{multicols}
+    \begin{align*}
+        \Pro(0.025 < y < 0.1) &= \Pro(0< Z < 0.14) + \Pro(0 < Z < 0.27)\\ &= 0.056 + 0.106\\
+        &= 0.162
+    \end{align*}}
 	
 	
 	\item[\textbf{2.}] A distribuição dos pesos de coelhos criados numa granja pode muito bem ser representada por uma distribuição Normal, com média 5 kg e desvio padrão 0,9 kg. Um abatedouro comprará 5000 coelhos e pretende classificá-los de acordo com o peso do seguinte modo: 15\% dos mais leves como pequenos, os 50\% seguintes como médios, os 20\% seguintes como grandes e os 15\% mais pesados como extras. Quais os limites de peso para cada classificação?
