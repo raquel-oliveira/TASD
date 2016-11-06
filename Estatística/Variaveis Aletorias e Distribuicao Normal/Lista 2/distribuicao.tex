@@ -148,7 +148,20 @@
 	    &= 0.2709
 	\end{align*}}
 	
-	\item[\textbf{5.}] A taxa de desemprego em certa cidade é de 10\%. É obtida uma amostra aleatória de 100 pessoas. Qual a probabilidade de uma amostra ter, pelo menos, 15 pessoas desempregadas.
+	\item[\textbf{5.}] A taxa de desemprego em certa cidade é de 10\%. É obtida uma amostra aleatória de 100 pessoas. Qual a probabilidade de uma amostra ter, pelo menos, 15 pessoas desempregadas.\\
+	\resposta{
+	n = 100\\
+	p = 0.1\\
+	$\E(X) = n\times p = 100\times0.1 = 10$\\
+	$\V(X) = n\times p(1-p) = 100\times0.1\times0.9 = 9$\\
+	$X \sim \N(\mu,\V(X)) \simeq X\sim\N(10; 9)$\\
+	$Z = \frac{15-10}{\sqrt{9}} = \frac{5}{3} = 1.66$\\
+	\begin{align*}
+	    \Pro(A \geq 15) &= \Pro (Z \geq 1.66)\\
+	    &= 0.5 - \Pro(0 \leq Z < 1.66)\\
+	    &= 0.5 - 0.4515\\
+	    &= 0.0485
+	\end{align*}}
 	
 	\item[\textbf{6.}] Numa população, o peso dos indivíduos é uma variável aleatória X que segundo estudos anteriores segue o modelo normal com média 78 kg e desvio-padrão 10 kg. Uma pessoa é escolhida ao acaso nessa população. Determine a probabilidade de que seu peso:
 		\begin{itemize}
