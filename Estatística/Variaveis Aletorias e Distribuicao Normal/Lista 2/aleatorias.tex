@@ -158,9 +158,72 @@
 	    \Pro(5) &= \frac{C_5^{34}C_{10}^{16}}{C^{50}_{15}}
 	\end{align*}}  
 	
-	\item[\textbf{10.}] 
-	    \item[\textbf{a.}] Exatamente duas estejam queimadas?
-	    \item[\textbf{b.}] Pelo menos uma esteja boa? \item[\textbf{c.}] Pelo menos duas estejam queimadas?
-	    \item[\textbf{d.}] O número esperado de lâmpadas queimadas? \item[\textbf{e.}] A variância do número de lâmpadas queimadas?
+	\item[\textbf{10.}] Uma caixa contém 12 lâmpadas das quais 5 estão queimadas. São escolhidas 6 lâmpadas ao acaso. \\
+	\resposta{
+	N = número de itens da população= 12\\
+	$M_1$ = numero de itens da populacao que sao considerados como ``sucesso"(queimada) =  5\\
+	$M_2$ = numero de itens da populacao que sao considerados como ``sucesso"(não queimada) =  7\\
+	n = numero de itens na amostra = 6}\\
+	Qual a probabilidade de que
+	    \item[\textbf{a.}] Exatamente duas estejam queimadas?\\
+	    \resposta{k= 2\\
+	    	\begin{align*}
+	            \Pro(X = k) &= \frac{C_k^{M_1}C_{n-k}^{N-M_1}}{C^N_n}\\
+	        \Pro(2) &= \frac{C_2^5C_{4}^{7}}{C^{12}_6}\\
+	        &= \frac{5!}{2!3!}\times\frac{7!}{4!3!}\times\frac{6!6!}{12!}\\
+	        &= 0.37878
+	\end{align*}} 
+	    \item[\textbf{b.}] Pelo menos uma esteja boa?\\
+	    \resposta{A probabilidade de ter pelo menos uma boa, são todas as probabilidades exceto a que nenhuma esteja boa, ou seja, todas queimadas.\\
+	    G = todas as lampadas estao queimadas\\
+	    $\Pro(G) = 0$, pois há apenas 5 queimadas, não há como selecionar 6 queimadas. 
+	    \ifx\begin{align*}
+	        \Pro(G) &= \frac{C^7_ 6\times C^6_1}{C^{12}_6}\\
+	        &= \frac{7\times6}{924}\\
+	        &= 0.04545454
+	    \end{align*}
+	    \fi
+	    Logo, a probabilidade de pelo menos uma estar boa é de:\begin{center}
+	    %$\Pro(b) = 1- \Pro(G) = 1 - 0.04545454 = 0.95454545$	    \end{center}}
+	    $\Pro(b) = 1- \Pro(G) = 1 - 0 = 1$	    \end{center}}
+	    \newpage
+	    \item[\textbf{c.}] Pelo menos duas estejam queimadas?\\
+	    \resposta{A probabilidade de ter pelo menos duas queimadas($\Pro(C)$), são todas as probabilidades exceto a que nenhuma esteja queimada($\Pro(H)$ e a probabilidade de que tenha apenas uma queimada($\Pro(I)$).\\
+	    \begin{multicols}{2}
+	    \begin{align*}
+	        \Pro(H) &= \frac{C_k^{M_2}C_{n-k}^{N-M_2}}{C^N_n}\\ &= \frac{C^{7}_{6}C^{12-7}_{6-6}}{C^{12}_{6}}\\
+	        &= \frac{7!}{6!1!}\times\frac{5!}{0!5!}\times\frac{6!6!}{12!}\\
+	        &= 7\times1 \times\frac{518400}{479001600}\\
+	        &= 0.00845258
+	  \end{align*}
+	  \begin{align*}
+	        \Pro(H) &= \frac{C_k^{M_1}C_{n-k}^{N-M_1}}{C^N_n}\\ &= \frac{C^{5}_{0}C^{12-5}_{6-0}}{C^{12}_{6}}\\
+	        &= \frac{5!}{0!5!}\times\frac{7!}{6!1!}\times\frac{6!6!}{12!}\\
+	        &= 1 \times 7 \times\frac{518400}{479001600}\\
+	        &= 0.00845258
+	  \end{align*}
+	  \end{multicols}
+	  \begin{align*}
+	        \Pro(I) &= \frac{C_k^{M_1}C_{n-k}^{N-M_1}}{C^N_n}\\
+	        &= \frac{C^{5}_{1}C^{12-5}_{6-1}}{C^{12}_{6}}\\
+	        &= \frac{5!}{1!4!}\times\frac{7!}{5!2!}\times\frac{6!6!}{12!}\\
+	        &= 0.113636
+	   \end{align*}
+	  \begin{align*}
+	        \Pro(C) &= 1 - (\Pro(H) + \Pro(I))\\
+	        &= 1 - 0.00845 - 0.113636\\
+	        &= 0.877914
+	    \end{align*}}
+	    \item[\textbf{d.}] O número esperado de lâmpadas queimadas?\\
+	    \resposta{O valor esperado é: \begin{align*}
+	        \E(x) &= \frac{m_1\times n}{N} \\&= \frac{5 \times 6}{12} \\&= 2.5
+	    \end{align*}}
+	    \item[\textbf{e.}] A variância do número de lâmpadas queimadas?
+	    \resposta{\begin{align*}
+	    \V(X) &= M_1\times p\times q \times\frac{N-n}{N-1}\\
+	    &= 5\times \frac{5}{12}\times\frac{7}{12}\times\frac{6}{11}\\
+	    &= \frac{1050}{1584}\\
+	    &= 0.662878
+	\end{align*}}
 	
 \end{itemize}
