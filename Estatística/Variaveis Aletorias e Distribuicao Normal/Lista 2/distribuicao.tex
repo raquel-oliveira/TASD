@@ -67,14 +67,70 @@
 	\end{align*}
 	Ou seja, os coelhos que possuem um peso inferior a 5.936Kg e superior a 5.351kg são considerados como grandes. E os superiores a 5.936Kg como extras.}
 
-	\item[\textbf{3.}] Sejam as variáveis normalmente distribuídas e independentes: $X1: \pN(100, 20)$ $X2: \pN(100, 30)$ e $X3: \pN(160, 40)$. Seja a variável Y calculada como sendo: $Y= 2X_1-X_2+3X_3$. Calcule:
+	\item[\textbf{3.}] Sejam as variáveis normalmente distribuídas e independentes: $X1: \pN(100, 20)$ $X2: \pN(100, 30)$ e $X3: \pN(160, 40)$. Seja a variável Y calculada como sendo: $Y= 2X_1-X_2+3X_3$. \\
+	\resposta{\begin{align*}
+	    \E(Y) &= 2\E(X_1) - \E(X_2) + 3\E(X_3)\\
+	    &= 2\times100-100+3\times160\\
+	    &= 100 +480\\
+	    &= 580
+	\end{align*}
+	\begin{align*}
+	    \V(Y) &= 2^2\V(X_1) + \V(X_2) + 3^2\V(X_3)\\
+	    &= 80 + 30 + 360\\
+	    &= 470
+	\end{align*}
+		\begin{align*}
+        Y &\sim \N(\E(Y), \V(Y))\\
+        &\sim \N(580; 470)
+    \end{align*}}\\
+	Calcule:
 		\begin{itemize}
-		\item[a)]$\Pro(Y>590)$
-	        \resposta{}
-		\item[b)] $\Pro(Y<616)$
-		    \resposta{}
-		\item[c)] $\Pro(550<Y<570)$
-		    \resposta{}
+		\item[a)]$\Pro(Y>590)$\\
+	        \resposta{
+	        \begin{align*}
+                Z  &= \frac{590 - 580}{\sqrt{470}}\\
+                &= 0.461265604
+            \end{align*}
+             \begin{align*}
+                \Pro(Y>590)  &= \Pro(Z > 0.461)\\
+                &= 0,5 - \Pro(0\leq Z< 0.461)\\
+                &= 0,5 - 0.1772\\
+                &= 0.3228
+            \end{align*}
+        }
+		\item[b)] $\Pro(Y<616)$\\
+		    \resposta{
+	        \begin{align*}
+                Z  &= \frac{616 - 580}{\sqrt{470}}\\
+                &= 1.660556174
+            \end{align*}
+            \begin{align*}
+                \Pro(Y<616)  &= \Pro(Z < 1.66)\\
+                &= 0.5 + \Pro(0 \leq Z < 1.66)\\
+                &= 0.5 + 0.4515\\
+                &= 0.9515
+            \end{align*}
+        }
+		\item[c)] $\Pro(550<Y<570)$\\
+		    \resposta{
+		    \begin{multicols}{2}
+	        \begin{align*}
+                Z_1  &= \frac{550 - 580}{\sqrt{470}}\\
+                &= -1.383796812
+            \end{align*}
+            \begin{align*}
+                Z_2  &= \frac{570 - 580}{\sqrt{470}}\\
+                &= -0.461265604
+            \end{align*}
+            \end{multicols}
+            \begin{align*}
+                \Pro(550<Y<570) &= \Pro(-1.383<Z<-0.4612)\\
+               % &= \Pro(-1.383<Z\leq0) + \Pro(0\leq Z<-0.4612)\\
+                &= \Pro(0\leq Z \leq 1.383) - \Pro(0\leq Z<-0.4612)\\
+                &= 0.4162-0.1772\\
+                &= 0.239
+            \end{align*}
+        }
 	\end{itemize}
 	
 	\item[\textbf{4.}] Considere 100 doadores escolhidos aleatoriamente de uma população onde a probabilidade de tipo A é 0,40? Qual a probabilidade de pelo menos 43 doadores terem sangue do tipo A?
