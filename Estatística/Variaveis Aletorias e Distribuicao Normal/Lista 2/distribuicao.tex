@@ -133,7 +133,20 @@
         }
 	\end{itemize}
 	
-	\item[\textbf{4.}] Considere 100 doadores escolhidos aleatoriamente de uma população onde a probabilidade de tipo A é 0,40? Qual a probabilidade de pelo menos 43 doadores terem sangue do tipo A?
+	\item[\textbf{4.}] Considere 100 doadores escolhidos aleatoriamente de uma população onde a probabilidade de tipo A é 0,40? Qual a probabilidade de pelo menos 43 doadores terem sangue do tipo A?\\
+	\resposta{n = 100\\
+	$p = 0.4$\\
+	Pelo TLC $n \geq 30$, aproximo para distribuição normal.\\
+	$\E(X) = n\times p = 100\times0.4 = 40$\\
+	$\V(X) = n\times p(1-p) = 100\times0.4\times0.6 = 24$\\
+	$X \sim \N(\mu,\V(X)) \simeq X\sim\N(40; 24)$\\
+	$Z = \frac{43-40}{\sqrt{24}} = \frac{3}{4.89} = 0.613$\\
+	\begin{align*}
+	    \Pro(A \geq 43) &= \Pro (Z \geq 0.613)\\
+	    &= 0.5 - \Pro(0 \leq Z < 0.613)\\
+	    &= 0.5 - 0.2291\\
+	    &= 0.2709
+	\end{align*}}
 	
 	\item[\textbf{5.}] A taxa de desemprego em certa cidade é de 10\%. É obtida uma amostra aleatória de 100 pessoas. Qual a probabilidade de uma amostra ter, pelo menos, 15 pessoas desempregadas.
 	
