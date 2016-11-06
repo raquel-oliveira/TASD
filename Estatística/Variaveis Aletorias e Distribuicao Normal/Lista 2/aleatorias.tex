@@ -122,8 +122,18 @@
 	    &= \frac{6375}{7600}\\
 	    &= 08388
 	\end{align*}} 
-	\item[\textbf{7.}] Suponha que selecionemos aleatoriamente 5 cartas baralho sem reposição de um de um maço ordinário de jogo de baralho. Qual é a probabilidade de obter exatamente 2 cartas de baralho vermelhas (isto é, copas ou ouros)?
-	\resposta{} 
+	\item[\textbf{7.}] Suponha que selecionemos aleatoriamente 5 cartas baralho sem reposição de um de um maço ordinário de jogo de baralho. Qual é a probabilidade de obter exatamente 2 cartas de baralho vermelhas (isto é, copas ou ouros)?\\
+	\resposta{Para essa questão estou considerando o baralho lusófono que possui 52 cartas sendo 13 de cada naipe. Sendo assim, as cartas vermelhas são 26 dentre as 52.\\
+	N = número de itens da população= 52\\
+	M = numero de itens da populacao que sao considerados como ``sucesso" =  26\\
+	n = numero de itens na amostra = 5\\
+	k = 2 (para as combinacoes)\\
+	\begin{align*}
+	    \Pro(X = k) &= \frac{C_k^MC_{n-k}^{N-M}}{C^N_n}\\
+	    \Pro(2) &= \frac{C_2^{26}C_{3}^{26}}{C^{52}_{5}}\\
+	    &= \frac{325\times 2600}{2598960}\\
+	    &=0.32513
+	\end{align*}} 
 	\item[\textbf{8.}] Numa Loteria, um apostador escolhe 6 números de 1 a 54. Qual a probabilidade dele acertar 5 números?
 	\resposta{} 
 	\item[\textbf{9.}] Suponha-se que haja 50 pessoas, dos quais 34 são MULHERES e o restante são HOMENS. Extrai-se uma amostra aleatória de 15 pessoas, sem reposição. Qual a probabilidade de exatamente 5 pessoas serem do sexo FEMININO?
