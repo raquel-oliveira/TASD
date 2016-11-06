@@ -91,8 +91,37 @@
 	    &= \frac{15\times6561}{1000000}\\
 	    &=0.0984
 	\end{align*}}
-	\item[\textbf{6.}] No fichário de um hospital, estão arquivados os prontuários dos de 20 pacientes, que deram entrada no PS apresentando algum problema cardíaco. Destes 5 sofreram infarto. Retirando-se uma amostra ao acaso de 3 destes prontuários, qual a probabilidade de que dois deles sejam de pacientes que sofreram infarto? Calcule o Valor esperado e a variância.
-	\resposta{} 
+	\item[\textbf{6.}] No fichário de um hospital, estão arquivados os prontuários dos de 20 pacientes, que deram entrada no PS apresentando algum problema cardíaco. Destes 5 sofreram infarto. Retirando-se uma amostra ao acaso de 3 destes prontuários, qual a probabilidade de que dois deles sejam de pacientes que sofreram infarto? Calcule o Valor esperado e a variância.\\
+	\resposta{N = número de itens da população= 20\\
+	M = numero de itens da populacao que sao considerados como ``sucesso" =  5\\
+	n = numero de itens na amostra = 3\\
+	k = 2 (para as combinacoes)\\
+	\begin{align*}
+	    \Pro(X = k) &= \frac{C_k^MC_{n-k}^{N-M}}{C^N_n}\\
+	    \Pro(2) &= \frac{C_2^{5}C_{1}^{15}}{C^{20}_{3}}\\
+	    &= \frac{10\times15}{1140}\\
+	    &=0.131578
+	\end{align*}
+	O valor esperado é: $\E(x) = \frac{m\times n}{N} = \frac{5 \times 3}{20} = 0.75$\\
+	\ifx
+    \begin{tabular}{c|c}
+        X & $\Pro(X)$ \\
+        \hline\hline
+        0 & $\frac{C_0^{5}C_{3}^{15}}{C^{20}_{3}}$\\
+        1 & $\frac{C_1^{5}C_{2}^{15}}{C^{20}_{3}}$\\
+        2 & $\frac{C_2^{5}C_{1}^{15}}{C^{20}_{3}}$\\
+        3 & $\frac{C_3^{5}C_{0}^{15}}{C^{20}_{3}}$ \\
+        \hline\hline\\
+        $\E(x)$ &
+    \end{tabular}
+    \fi
+	A variância é:
+	\begin{align*}
+	    \V(X) &= M\times p\times q \times\frac{N-n}{N-1}\\
+	    &= 5\times\frac{5}{20}\times\frac{15}{20}\times\frac{17}{19}\\
+	    &= \frac{6375}{7600}\\
+	    &= 08388
+	\end{align*}} 
 	\item[\textbf{7.}] Suponha que selecionemos aleatoriamente 5 cartas baralho sem reposição de um de um maço ordinário de jogo de baralho. Qual é a probabilidade de obter exatamente 2 cartas de baralho vermelhas (isto é, copas ou ouros)?
 	\resposta{} 
 	\item[\textbf{8.}] Numa Loteria, um apostador escolhe 6 números de 1 a 54. Qual a probabilidade dele acertar 5 números?
